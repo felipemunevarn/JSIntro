@@ -1,7 +1,9 @@
 let title = document.querySelector(".title");
 title.textContent = "Nutrition Good Life";
 
-let pablo = document.querySelector("#pablo");
+let pacientes = document.querySelectorAll(".paciente");
+console.log(pacientes);
+
 let tdWeight = pablo.querySelector(".info-peso");
 let tdHeight = pablo.querySelector(".info-altura");
 let tdImc = pablo.querySelector(".info-imc");
