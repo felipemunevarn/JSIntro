@@ -27,7 +27,13 @@ for (let i = 0; i < patients.length; i++) {
     }
 
     if (isWeightValid && isHeightValid){
-        imc = weight / (height * height);
-        tdImc.textContent = (imc).toFixed(2);
+        imc = computeIMC(weight, height);
+        tdImc.textContent = imc;
     }
 }
+
+function computeIMC (weight, height) {
+    imc = weight / (height * height);
+    return (imc).toFixed(2);
+}
+
